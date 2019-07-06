@@ -27,6 +27,7 @@ html {
   font-size: 1.75rem;
   font-weight: 700;
   color: #793F5C;
+  margin: 3rem 1rem 2rem 1rem;
 }
 
 .subhead-text--md {
@@ -36,6 +37,7 @@ html {
   color: #FFFFFF;
   text-transform: uppercase;
   letter-spacing: .25rem;
+  margin-bottom: 1rem;
 }
 
 span {
@@ -44,10 +46,11 @@ span {
 
 .subhead-text--sm {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 400;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .normal-text {
@@ -70,6 +73,7 @@ span {
   font-weight: 400;
   color: #FFFFFF;
   letter-spacing: .25rem;
+  margin-bottom: 1rem;
 }
 
 .card-list-bulls {
@@ -78,6 +82,7 @@ span {
   font-weight: 400;
   line-height: 1.6;
   color: #353E4A;
+  padding-top: 1rem;
 }
 
 .card-list-nobulls {
@@ -87,6 +92,9 @@ span {
   list-style-type: none;
   line-height: 1.5rem;
   color: #FFFFFF;
+  padding-left: 1.40rem;
+  text-indent: -.70rem;
+  margin-top: 1rem;
 }
 
 .nobull-list {
@@ -106,6 +114,14 @@ span {
 .fa-bullseye {
   margin-right: .50rem;
   color: rgba(250, 250, 250, 0.5);
+}
+
+.sub-component-box li:not(:last-child) {
+  margin-bottom: .75rem;
+}
+
+.sub-component-card li:not(:last-child) {
+  margin-bottom: .75rem;
 }
 
 header {
@@ -139,4 +155,59 @@ img.regular-image {
   width: 10rem;
   height: auto;
   margin: 0 auto;
+}
+
+.grid {
+  margin: 0;
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "header" "component-top" "component-middle" / 1fr;
+}
+
+header {
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+.component-card-wrap {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto auto auto auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" / 1fr;
+  -ms-grid-row-gap: 1rem;
+  grid-row-gap: 1rem;
+  padding: 0 1rem;
+}
+
+.component-card-wrap .sub-component-card {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "img" "card-list-bulls" / 1fr;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+}
+
+.component-box-wrap {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "sub-component-box" "sub-component-box" "sub-component-box" "sub-component-box" / 1fr;
+  -ms-grid-row-gap: 1rem;
+  grid-row-gap: 1rem;
+  padding: 0 1rem;
+}
+
+.component-box-wrap .sub-component-box {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto auto auto auto;
+  -ms-grid-columns: 1fr;
+  grid-template: "subhead-text--md" "subhead-text--sm" "date-text" "normal-text--white" "card-list-nobulls" / 1fr;
+  padding: 2rem 2rem;
+  border-radius: 8px;
 }

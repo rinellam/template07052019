@@ -1,0 +1,52 @@
+
+// Grid
+
+.grid
+    margin: 0
+    display: grid
+    display: -ms-grid
+    -ms-grid-rows: auto auto auto auto
+    -ms-grid-columns: 1fr
+    grid-template: "header" "component-top" "component-middle" / 1fr
+
+header
+    padding: 2rem 1rem 3rem 1rem
+
+.component-card-wrap
+    display: grid
+    display: -ms-grid
+    -ms-grid-rows: auto auto auto auto auto auto
+    -ms-grid-columns: 1fr
+    grid-template: "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" / 1fr
+    -ms-grid-row-gap: 1rem
+    grid-row-gap: 1rem
+    padding: 0 1rem
+
+    .sub-component-card
+        display: grid
+        display: -ms-grid
+        -ms-grid-rows: auto auto
+        -ms-grid-columns: 1fr
+        grid-template: "img" "card-list-bulls" / 1fr
+        padding: 2rem 3rem
+        border-radius: 8px
+
+.component-box-wrap
+    display: grid
+    display: -ms-grid
+    -ms-grid-rows: auto auto auto auto
+    -ms-grid-columns: 1fr
+    grid-template: "sub-component-box" "sub-component-box" "sub-component-box" "sub-component-box" / 1fr
+    -ms-grid-row-gap: 1rem
+    grid-row-gap: 1rem
+    padding: 0 1rem
+
+    .sub-component-box
+        display: grid
+        display: -ms-grid
+        -ms-grid-rows: auto auto auto auto auto
+        -ms-grid-columns: 1fr
+        grid-template: "subhead-text--md" "subhead-text--sm" "date-text" "normal-text--white" "card-list-nobulls" / 1fr
+        padding: 2rem 2rem
+        border-radius: 8px
+
