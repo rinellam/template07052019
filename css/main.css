@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700&display=swap");
+*, h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+.title-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ED6767;
+}
+
+.lead-in-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.subhead-text--lg {
+  font-family: 'Merriweather', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #793F5C;
+}
+
+.subhead-text--md {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+}
+
+span {
+  font-weight: 700;
+}
+
+.subhead-text--sm {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.normal-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.normal-text--white {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.date-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: .25rem;
+}
+
+.card-list-bulls {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #353E4A;
+}
+
+.card-list-nobulls {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  list-style-type: none;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+}
+
+.nobull-list {
+  list-style-type: none;
+}
+
+.fa-info-circle {
+  font-size: 1.35rem;
+  margin-right: .55rem;
+}
+
+.fa-image, .fa-comments, .fa-code, .fa-users, .fa-chart-area, .fa-code-branch {
+  font-size: 6rem;
+  color: #353E4A;
+}
+
+.fa-bullseye {
+  margin-right: .50rem;
+  color: rgba(250, 250, 250, 0.5);
+}
+
+header {
+  background: #793F5C;
+}
+
+.component-top {
+  background: #F2F2E6;
+}
+
+.sub-component-card {
+  background: #FFFFFF;
+}
+
+.component-middle {
+  background: #F2F2E6;
+}
+
+.sub-component-box {
+  background: #353E4A;
+}
+
+img.round-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+img.regular-image {
+  width: 10rem;
+  height: auto;
+  margin: 0 auto;
+}
