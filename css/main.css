@@ -27,7 +27,8 @@ html {
   font-size: 1.75rem;
   font-weight: 700;
   color: #793F5C;
-  margin: 3rem 1rem 2rem 1rem;
+  margin-left: 1rem;
+  margin-top: 3rem;
 }
 
 .subhead-text--md {
@@ -82,7 +83,9 @@ span {
   font-weight: 400;
   line-height: 1.6;
   color: #353E4A;
-  padding-top: 1rem;
+  list-style-position: inside;
+  padding-left: 1.40rem;
+  text-indent: -.80rem;
 }
 
 .card-list-nobulls {
@@ -99,6 +102,8 @@ span {
 
 .nobull-list {
   list-style-type: none;
+  padding-left: 1.40rem;
+  text-indent: -.70rem;
 }
 
 .fa-info-circle {
@@ -128,7 +133,7 @@ header {
   background: #793F5C;
 }
 
-.component-top {
+.component-card {
   background: #F2F2E6;
 }
 
@@ -136,7 +141,7 @@ header {
   background: #FFFFFF;
 }
 
-.component-middle {
+.component-box {
   background: #F2F2E6;
 }
 
@@ -168,6 +173,11 @@ img.regular-image {
 
 header {
   padding: 2rem 1rem 3rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.component-card {
+  margin-bottom: 1rem;
 }
 
 .component-card-wrap {
@@ -176,9 +186,8 @@ header {
   -ms-grid-rows: auto auto auto auto auto auto;
   -ms-grid-columns: 1fr;
   grid-template: "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" / 1fr;
-  -ms-grid-row-gap: 1rem;
-  grid-row-gap: 1rem;
-  padding: 0 1rem;
+  padding: 1rem 1rem 4rem 1rem;
+  margin-bottom: 1rem;
 }
 
 .component-card-wrap .sub-component-card {
@@ -187,8 +196,22 @@ header {
   -ms-grid-rows: auto auto;
   -ms-grid-columns: 1fr;
   grid-template: "img" "card-list-bulls" / 1fr;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   border-radius: 8px;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .component-box-wrap {
@@ -197,9 +220,7 @@ header {
   -ms-grid-rows: auto auto auto auto;
   -ms-grid-columns: 1fr;
   grid-template: "sub-component-box" "sub-component-box" "sub-component-box" "sub-component-box" / 1fr;
-  -ms-grid-row-gap: 1rem;
-  grid-row-gap: 1rem;
-  padding: 0 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 .component-box-wrap .sub-component-box {
@@ -210,4 +231,49 @@ header {
   grid-template: "subhead-text--md" "subhead-text--sm" "date-text" "normal-text--white" "card-list-nobulls" / 1fr;
   padding: 2rem 2rem;
   border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .component-card-wrap {
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: auto auto auto;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template: "sub-component-card sub-component-card"  "sub-component-card sub-component-card"  "sub-component-card sub-component-card"  / 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .container {
+    width: 75%;
+    margin: 0 auto;
+  }
+  header {
+    border-radius: 8px;
+    margin-top: 3rem;
+  }
+  .component-card {
+    border-radius: 8px;
+  }
+  .component-card .component-card-wrap {
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: auto auto auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template: "sub-component-card sub-component-card sub-component-card" "sub-component-card sub-component-card sub-component-card" / 1fr 1fr 1fr;
+  }
+  .component-box {
+    border-radius: 8px;
+    margin-bottom: 3rem;
+  }
+  .component-box .component-box-wrap {
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template: "sub-component-box sub-component-box" "sub-component-box sub-component-box" / 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
 }
