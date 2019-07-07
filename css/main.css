@@ -32,6 +32,18 @@ html {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 414px) {
+  .subhead-text--lg {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .subhead-text--lg {
+    padding-left: 2rem;
+  }
+}
+
 .subhead-text--md {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
@@ -127,12 +139,6 @@ span {
 
 .sub-component-card li:not(:last-child) {
   margin-bottom: .75rem;
-}
-
-@media screen and (min-width: 990px) {
-  .subhead-text--lg {
-    padding-left: 2rem;
-  }
 }
 
 header {
@@ -253,6 +259,21 @@ header {
   align-items: flex-start;
 }
 
+@media screen and (min-width: 414px) {
+  header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .component-card-wrap {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .component-box-wrap {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .component-card-wrap {
     display: grid;
@@ -278,7 +299,7 @@ header {
   .component-card {
     border-radius: 8px;
   }
-  .component-card .component-card-wrap {
+  .component-card-wrap {
     display: grid;
     display: -ms-grid;
     -ms-grid-rows: auto auto auto;
