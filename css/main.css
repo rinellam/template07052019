@@ -13,6 +13,7 @@ html {
   font-size: 2.8rem;
   font-weight: 700;
   color: #ED6767;
+  margin-bottom: 1rem;
 }
 
 .lead-in-text {
@@ -28,7 +29,7 @@ html {
   font-weight: 700;
   color: #793F5C;
   margin-left: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .subhead-text--md {
@@ -102,8 +103,7 @@ span {
 
 .nobull-list {
   list-style-type: none;
-  padding-left: 1.40rem;
-  text-indent: -.70rem;
+  text-indent: 0rem;
 }
 
 .fa-info-circle {
@@ -127,6 +127,12 @@ span {
 
 .sub-component-card li:not(:last-child) {
   margin-bottom: .75rem;
+}
+
+@media screen and (min-width: 990px) {
+  .subhead-text--lg {
+    padding-left: 2rem;
+  }
 }
 
 header {
@@ -153,7 +159,7 @@ img.round-image {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 img.regular-image {
@@ -186,7 +192,7 @@ header {
   -ms-grid-rows: auto auto auto auto auto auto;
   -ms-grid-columns: 1fr;
   grid-template: "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" / 1fr;
-  padding: 1rem 1rem 4rem 1rem;
+  padding: 1rem 1rem 3rem 1rem;
   margin-bottom: 1rem;
 }
 
@@ -196,7 +202,7 @@ header {
   -ms-grid-rows: auto auto;
   -ms-grid-columns: 1fr;
   grid-template: "img" "card-list-bulls" / 1fr;
-  padding: 2rem 2rem;
+  padding: 2rem 2rem 3rem 2rem;
   border-radius: 8px;
   margin-bottom: 1rem;
   display: -webkit-box;
@@ -232,6 +238,19 @@ header {
   padding: 2rem 2rem;
   border-radius: 8px;
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 @media screen and (min-width: 768px) {
@@ -253,6 +272,8 @@ header {
   header {
     border-radius: 8px;
     margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .component-card {
     border-radius: 8px;
@@ -263,17 +284,15 @@ header {
     -ms-grid-rows: auto auto auto;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template: "sub-component-card sub-component-card sub-component-card" "sub-component-card sub-component-card sub-component-card" / 1fr 1fr 1fr;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .component-box-wrap {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .component-box {
     border-radius: 8px;
     margin-bottom: 3rem;
-  }
-  .component-box .component-box-wrap {
-    display: grid;
-    display: -ms-grid;
-    -ms-grid-rows: auto auto;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template: "sub-component-box sub-component-box" "sub-component-box sub-component-box" / 1fr 1fr;
-    grid-column-gap: 1rem;
   }
 }
