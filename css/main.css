@@ -20,7 +20,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #F2F2E6;
 }
 
 .subhead-text--lg {
@@ -48,7 +48,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #F2F2E6;
   text-transform: uppercase;
   letter-spacing: .25rem;
   margin-bottom: 1rem;
@@ -62,7 +62,7 @@ span {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.05rem;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #F2F2E6;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -71,21 +71,21 @@ span {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.15rem;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #F2F2E6;
 }
 
 .normal-text--white {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.15rem;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #F2F2E6;
 }
 
 .date-text {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #F2F2E6;
   letter-spacing: .25rem;
   margin-bottom: 1rem;
 }
@@ -107,7 +107,7 @@ span {
   font-weight: 400;
   list-style-type: none;
   line-height: 1.5rem;
-  color: #FFFFFF;
+  color: #F2F2E6;
   padding-left: 1.40rem;
   text-indent: -.70rem;
   margin-top: 1rem;
@@ -224,9 +224,6 @@ header {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-shadow: 5px 5px 12px 1px rgba(41, 41, 57, 0.4);
-  -moz-box-shadow: 5px 5px 12px 1px rgba(41, 41, 57, 0.4);
-  box-shadow: 5px 5px 12px 1px rgba(41, 41, 57, 0.4);
 }
 
 .component-box-wrap {
@@ -260,9 +257,6 @@ header {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-shadow: 5px 5px 12px 1px rgba(41, 41, 57, 0.4);
-  -moz-box-shadow: 5px 5px 12px 1px rgba(41, 41, 57, 0.4);
-  box-shadow: 5px 5px 12px 1px rgba(41, 41, 57, 0.4);
 }
 
 @media screen and (min-width: 414px) {
