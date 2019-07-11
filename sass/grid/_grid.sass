@@ -11,7 +11,8 @@
 
 header
     padding: 2rem 1rem 3rem 1rem
-    margin-bottom: 1rem
+    //margin-bottom: 1rem
+    grid-row-gap: 1rem;
 
 .component-card
     margin-bottom: 1rem
@@ -23,7 +24,8 @@ header
     -ms-grid-columns: 1fr
     grid-template: "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" "sub-component-card" / 1fr
     padding: 1rem 1rem 3rem 1rem
-    margin-bottom: 1rem
+    //margin-bottom: 1rem
+    grid-row-gap: 1rem;
 
     .sub-component-card
         display: grid
@@ -58,14 +60,13 @@ header
         grid-template: "subhead-text--md" "subhead-text--sm" "date-text" "normal-text--white" "card-list-nobulls" / 1fr
         padding: 2rem 2rem
         border-radius: 8px
-        margin-bottom: 1rem
+        //margin-bottom: 1rem
+        grid-row-gap: 1rem
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: flex-start
-        //-webkit-box-shadow: 5px 5px 12px 1px rgba(41,41,57,0.4)
-        //-moz-box-shadow: 5px 5px 12px 1px rgba(41,41,57,0.4)
-        //box-shadow: 5px 5px 12px 1px rgba(41,41,57,0.4)
+
 
 @media screen and (min-width: 414px)
     header
